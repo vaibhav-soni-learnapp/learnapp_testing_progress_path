@@ -168,26 +168,26 @@ def workshop_container(day_no, date, workshop_name, workshop_jpeg, agenda, meeti
             except:
                 recording_score = 0
 
-            if recording_score >= 0:
+         #   if recording_score >= 0:
 
-                if recording_link == None:
-                    st.write("⌛ Uploading...")
-                    st.caption("Check back in some time")
-                else:
-                    st.markdown(
-                        f"[![Watch Recording](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/600f5e01-fc1b-4edb-b3fb-411f35a8c092.png)]({recording_link})"
-                    )
+               # if recording_link == None:
+              #      st.write("⌛ Uploading...")
+              #      st.caption("Check back in some time")
+               # else:
+              #      st.markdown(
+               #         f"[![Watch Recording](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/600f5e01-fc1b-4edb-b3fb-411f35a8c092.png)]({recording_link})"
+              #      )
 
-            else:
-                st.markdown(
-                    f"[![Request Recording](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/2e866960-fa4c-4ee5-abcd-02ee18c88dd2.png)]({request_link})"
-                )
-                st.write("🤷 Uh Oh! Looks like you did not attend this class!")
+          #  else:
+            #    st.markdown(
+            #        f"[![Request Recording](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/2e866960-fa4c-4ee5-abcd-02ee18c88dd2.png)]({request_link})"
+           #     )
+           #     st.write("🤷 Uh Oh! Looks like you did not attend this class!")
 
-        else:
-            st.markdown(
-                f"[![Register](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/3c432ff4-a7ac-4790-a978-2546286f4945.png)]({zoom_link})"
-            )
+    #    else:
+          #  st.markdown(
+          #      f"[![Register](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/3c432ff4-a7ac-4790-a978-2546286f4945.png)]({zoom_link})"
+          #  )
 
     st.write("----")
     st.write("")
