@@ -135,9 +135,9 @@ def workshop_container(day_no, date, workshop_name, workshop_jpeg, agenda, meeti
     #
     request_link = "https://api.whatsapp.com/send/?phone=8484819808"
     zoom_link = f"https://us06web.zoom.us/j/{meeting_id}"
-    recording_link = df_recording[df_recording["Day_No"] == day_no][
-        "Recording_Url"
-    ].iloc[0]
+ #   recording_link = df_recording[df_recording["Day_No"] == day_no][
+ #       "Recording_Url"
+ #   ].iloc[0]
     date_format = date.strftime("%d %b'%y")
     time_format = date.strftime("%H:%M %p")
 
