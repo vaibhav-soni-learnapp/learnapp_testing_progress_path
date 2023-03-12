@@ -184,10 +184,10 @@ def workshop_container(day_no, date, workshop_name, workshop_jpeg, agenda, meeti
            #     )
            #     st.write("🤷 Uh Oh! Looks like you did not attend this class!")
 
-    #    else:
-          #  st.markdown(
-          #      f"[![Register](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/3c432ff4-a7ac-4790-a978-2546286f4945.png)]({zoom_link})"
-          #  )
+        else:
+            st.markdown(
+                f"[![Register](https://s3.ap-south-1.amazonaws.com/messenger.prod.learnapp.com/emails/newsLetters-05-jan-23-la-announcement-shivam-vashisth/3c432ff4-a7ac-4790-a978-2546286f4945.png)]({zoom_link})"
+            )
 
     st.write("----")
     st.write("")
