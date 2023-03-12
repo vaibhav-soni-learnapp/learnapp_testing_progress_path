@@ -334,14 +334,14 @@ st.markdown(
 # Perform SQL query on the Google Sheet.
 # Uses st.cache to only rerun when the query changes or after 10 min.
 # @st.cache(ttl=600)
-def run_query(query):
-    rows = conn.execute(query, headers=1)
-    rows = rows.fetchall()
-    return rows
+#def run_query(query):
+ #   rows = conn.execute(query, headers=1)
+    #rows = rows.fetchall()
+ #   return rows
 
-recording_sheet_url = "https://docs.google.com/spreadsheets/d/113pise-18fX0Tbd-ofOHc3x6T57BLN45BXEyn2Qo-FQ/edit#gid=1961064199"
-rows = run_query(f'SELECT * FROM "{recording_sheet_url}"')
-df_recording = pd.DataFrame(rows)
+#recording_sheet_url = "https://docs.google.com/spreadsheets/d/113pise-18fX0Tbd-ofOHc3x6T57BLN45BXEyn2Qo-FQ/edit#gid=1961064199"
+#rows = run_query(f'SELECT * FROM "{recording_sheet_url}"')
+#df_recording = pd.DataFrame(rows)
 
 
 try:
